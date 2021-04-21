@@ -1,28 +1,39 @@
 QPushButton {
-    background-color: #3c99dc;
+    background-color: #2D7AD4;
     border-style: outset;
-    border-width: 2px;
-    border-radius: 10px;
-    border-color: beige;
+    border-width: 1px;
+    border-radius: 2px;
+    border-color: #2F538B;
     font: 18px;
     color: white;
-    min-width: 10em;
-    min-height: 40px;
+    min-width: 122px;
+    min-height: 36px;
     padding: 6px;
+    margin-top: 10px;
 }
 QPushButton:pressed {
-    background-color: rgb(224, 0, 0);
+    background-color: #BEBEBE;
     border-style: inset;
+    border-color: #B6B6B6;
 }
 
 QPushButton:disabled {
     background-color: #BEBEBE;
+    border-color: #B6B6B6;
 }
+
+QPushButton#secondary_button {
+    background: transparent;
+    color: #363B3D;
+    border-color: #363B3D;
+}
+
 QLineEdit {
-    height: 40px;
-    margin: 0px 0px 0px 0px;
-    padding-left: 5px;
-    border-radius: 10px;
+    height: 32px;
+    padding: 0 5px;
+    border-radius: 2px;
+    border: 1px solid #A7ABA7;
+    margin-bottom: 20px;
 }
 
 QLabel#keyring_label {
@@ -34,12 +45,33 @@ QLabel#keyring_instruction {
 }
 
 QPlainTextEdit {
-    border-radius: 20px;
+    border-radius: 2px;
     background-color: palette(base);
-    padding-left: 5px;
-    padding-top: 5px;
+    padding: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #A7ABA7;
 }
 
+QWidget#sidenavbar {
+    background-color: #D1E5F4;
+}
+QWidget#sidenavbar QPushButton {
+    border-color: #2D7AD4;
+    font-size: 14px;
+    background-color: #D1E5F4;
+    color: black;
+    min-width: 0;
+    min-height: 32px;
+    border-radius: 0;
+    text-align: left;
+    padding: 10px;
+    margin: 15px 0;
+}
+
+QWidget#sidenavbar QPushButton[active="True"] {
+    background-color: #2D7AD4;
+    color: #FFFFFF;
+}
 
 QLabel#keyfingerprint {
     font-size: 18px;

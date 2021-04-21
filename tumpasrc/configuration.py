@@ -1,6 +1,6 @@
+import configparser
 import os
 import pathlib
-import configparser
 
 OS_RELEASE = "/etc/os-release"
 

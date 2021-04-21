@@ -32,6 +32,6 @@ setuptools.setup(
         "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
         "Intended Audience :: Developers",
         "Operating System :: OS Independent",
-        ],
+    ],
     entry_points={"console_scripts": ["tumpa = tumpasrc:main"]},
 )
